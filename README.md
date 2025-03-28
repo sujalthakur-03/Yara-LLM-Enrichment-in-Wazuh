@@ -30,5 +30,5 @@ LLMs use deep learning to process and generate human language, enhancing efficie
 
 ## ➡ Wazuh-Server Config
    - Paste the [Decoders](https://github.com/effaaykhan/LLM-Enrichment-in-Wazuh-Alerts/blob/main/local_decoder.xml) in /var/ossec/etc/decoders/local_decoder.xml
-   - Paste the [Rules](https://github.com/effaaykhan/LLM-Enrichment-in-Wazuh-Alerts/blob/main/local_rules.xml) in /var/ossec/etc/rules/local_rules.xml
-   - In [ossec.conf](https://github.com/effaaykhan/LLM-Enrichment-in-Wazuh-Alerts/blob/main/ossec.conf) Add the following block
+   - Paste the [Rules]() in /var/ossec/etc/rules/local_rules.xml
+   - In [ossec.conf](https://github.com/sujalthakur-03/Yara-LLM-Enrichment-in-Wazuh/blob/main/ossec.conf) Add the following block
