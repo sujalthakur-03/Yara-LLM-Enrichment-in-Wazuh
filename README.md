@@ -26,7 +26,10 @@ LLMs use deep learning to process and generate human language, enhancing efficie
       cd /opt/yara-4.5.1/rules
       ./index_gen.sh
 
-## ➡ Step 3: Now add the [yara.sh](https://github.com/sujalthakur-03/Yara-LLM-Enrichment-in-Wazuh/blob/main/yara.sh) in /var/ossec/active-response/bin
+## ➡ Step 3: Now add the following files in /var/ossec/active-response/bin 
+
+- [yara.sh](https://github.com/sujalthakur-03/Yara-LLM-Enrichment-in-Wazuh/blob/main/yara.sh)
+- [llm_query.py](https://github.com/sujalthakur-03/Yara-LLM-Enrichment-in-Wazuh/blob/main/llm_query.py)
 
 ## ➡ Wazuh-Server Config
    - Paste the [Decoders](https://github.com/sujalthakur-03/Yara-LLM-Enrichment-in-Wazuh/blob/main/local_decoder.xml) in /var/ossec/etc/decoders/local_decoder.xml
