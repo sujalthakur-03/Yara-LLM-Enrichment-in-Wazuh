@@ -70,14 +70,14 @@ then
                 api_request_invalid=true
                 echo "wazuh-YARA: ERROR - Invalid LLM API request" >> ${LOG_FILE}
                 # Log Yara scan result without LLM response
-                echo "wazuh-YARA: INFO - Scan result: $line | chatgpt_response: none" >> ${LOG_FILE}
+                echo "wazuh-YARA: INFO - Scan result: $line | AI_response: none" >> ${LOG_FILE}
             else
                 # Check if the response text is empty and handle the error
                 if [[ -z "$llm_response" ]]; then
                     echo "wazuh-YARA: ERROR - LLM API returned empty response" >> ${LOG_FILE}
                 else
                     # Combine the YARA scan output and LLM response
-                    combined_output="wazuh-YARA: INFO - Scan result: $line | chatgpt_response: $llm_response"
+                    combined_output="wazuh-YARA: INFO - Scan result: $line | AI_response: $llm_response"
 
                     # Append the combined output to the log file
                     echo "$combined_output" >> ${LOG_FILE}
