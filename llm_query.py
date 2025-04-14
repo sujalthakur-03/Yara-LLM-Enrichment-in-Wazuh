@@ -9,7 +9,7 @@ def query_llm(prompt):
     try:
         client = OpenAI(
             base_url="https://api.novita.ai/v3/openai",
-            api_key="sk_6iVlW_MzyeiOa8B4IteHFTFMSbNy08t_bM1-dLdE1jw",
+            api_key="YOUR-API-KEY",
         )
 
         model = "deepseek/deepseek-v3-turbo"
