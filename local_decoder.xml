@@ -76,8 +76,8 @@
 
 <decoder name="YARA_child">
   <parent>YARA_decoder</parent>
-  <regex type="pcre2">chatgpt_response: (.*)</regex>
-  <order>YARA.chatgpt_response</order>
+  <regex type="pcre2">AI_response: (.*)</regex>
+  <order>AI_response</order>
 </decoder>
 
 <decoder name="YARA_child">
